@@ -1,0 +1,59 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+ENV/
+.env
+.venv
+*.venv
+env/
+*.env
+
+# Log files
+logs/
+*.log
+nohup.out
+
+# Database files
+*.sqlite3
+*.db
+
+# Environment variables
+.env
+*.env
+config/settings.ini
+
+# Pytest & coverage reports
+.coverage
+htmlcov/
+*.cover
+*.py,cover
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Python package distribution
+dist/
+build/
+*.egg-info/
+pip-wheel-metadata/
+
+# VSCode and IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker
+docker-compose.override.yml
+
+# Flask-Migrate migration files (optional)
+migrations/
+
+# Cache files
+*.cache
+.cache/

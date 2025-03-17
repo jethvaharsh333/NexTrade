@@ -1,0 +1,32 @@
+https://www.nseindia.com/api/marketStatus
+
+https://github.com/ashendrasharma/Stock-Price-Prediction-Using-LSTM/blob/main/requirements.txt
+
+curl -X GET "http://127.0.0.1:5000/stock-list-in-database" \ -H "Content-Type: application/json"
+
+
+// indices data
+url: curl -X GET http://127.0.0.1:5000/stock/indices \ -H "Authorization: Bearer YOUR_JWT_TOKEN" \ -H "Content-Type: application/json"
+url: curl -X GET http://127.0.0.1:5000/stock/indices \ -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJoYXJzaEBnbWFpbC5jb20iLCJlbWFpbCI6ImhhcnNoQGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJoYXJzaDEyMyIsIm5iZiI6MTc0MDUzNDczNSwiZXhwIjoxNzQwNjIxMTM1LCJpYXQiOjE3NDA1MzQ3MzUsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTI0NiIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTI0NiJ9.ne89Fxii8-d7Wnok4VlFwsig-fAPJoxkJ5Of6EN6uJM" \ -H "Content-Type: application/json"
+data: [
+  {
+    "indexName": "NIFTY50",
+    "percentageChange": 0.14,
+    "priceChange": 31.1
+  },
+  {
+    "indexName": "USD/INR",
+    "percentageChange": -0.01,
+    "priceChange": -0.01
+  },
+  {
+    "indexName": "Gold",
+    "percentageChange": -0.04,
+    "priceChange": -1.1
+  },
+  {
+    "indexName": "Nifty MidCap 100",
+    "percentageChange": -0.4,
+    "priceChange": -55.65
+  }
+]
