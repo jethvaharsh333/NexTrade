@@ -273,6 +273,7 @@ class AppNavigation {
             key: state.pageKey,
           ),
         ),
+
       ];
 
   static GoRouter getRouter(bool isLoggedIn) => GoRouter(

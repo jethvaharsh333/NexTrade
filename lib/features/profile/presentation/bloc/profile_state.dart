@@ -39,3 +39,10 @@ final class ProfileLogoutFailure extends ProfileState {
   final String failureMessage;
   ProfileLogoutFailure(this.failureMessage);
 }
+
+final class ProfileLoaded extends ProfileState{
+  // final String
+  // User user;
+  final AppUserCubit _appUserCubit;
+  ProfileLoaded(this._appUserCubit);
+}

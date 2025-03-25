@@ -42,7 +42,7 @@ class _EditPortfolioState extends State<EditPortfolio> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Edit profile", style: TextStyle(fontWeight: FontWeight.w900)),
+        title: const Text("Edit portfolio", style: TextStyle(fontWeight: FontWeight.w900)),
         // leading: InkWell(
         //   child: const Icon(Icons.arrow_back_ios_new_rounded),
         //   onTap: () {
@@ -55,18 +55,18 @@ class _EditPortfolioState extends State<EditPortfolio> {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                const Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    CircleAvatar(
-                      radius: 50,
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Text("Edit picture or avatar"),
-                  ],
-                ),
+                // const Column(
+                //   mainAxisAlignment: MainAxisAlignment.center,
+                //   children: [
+                //     CircleAvatar(
+                //       radius: 50,
+                //     ),
+                //     SizedBox(
+                //       height: 10,
+                //     ),
+                //     Text("Edit picture or avatar"),
+                //   ],
+                // ),
                 const SizedBox(height: 27),
                 BlocConsumer<PortfolioBloc, PortfolioState>(
                     listener: (context, state) {

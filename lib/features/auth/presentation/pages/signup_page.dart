@@ -50,6 +50,10 @@ class _SignUpPageState extends State<SignUpPage> {
                 }
                 if(state is AuthSignUpSuccess){
                   showSnackBar(context, "Successfully registered");
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const LoginPage()),
+                  );
                 }
               },
               builder: (context, state) {

@@ -7,6 +7,10 @@ part 'app_user_state.dart';
 class AppUserCubit extends Cubit<AppUserState> {
   AppUserCubit() : super(AppUserInitial());
 
+  // void getUser(){
+  //   emit();
+  // }
+
   void updateUser (User? user) {
     if(user == null){
       emit(AppUserInitial());    // Logout state

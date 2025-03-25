@@ -1,4 +1,5 @@
 import 'package:bloc/bloc.dart';
+import 'package:fpdart/fpdart.dart';
 import 'package:meta/meta.dart';
 import 'package:nextrade/core/common/cubits/app_user/app_user_cubit.dart';
 import 'package:nextrade/core/common/entities/user.dart';
@@ -30,6 +31,7 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
     on<ProfileEvent>((_, emit) => emit(ProfileLoading()));
     on<ProfileEditClickedEvent>(_onProfileEdit);
     on<PasswordEditClickedEvent>(_onPasswordEdit);
+    on<ProfileGetEvent>(_onProfileGet);
     on<ProfileLogoutClickedEvent>(_onLogoutProfile);
   }
 
@@ -63,6 +65,12 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
       (l) => emit(PasswordEditFailure(l.message)),
       (r) => emit(PasswordEditSuccess(r)),
     );
+  }
+
+  void _onProfileGet(ProfileGetEvent event, Emitter<ProfileState> emit){
+    final res = _appUserCubit.state;
+
+
   }
 
   void _onLogoutProfile(ProfileLogoutClickedEvent event, Emitter<ProfileState> emit) async {

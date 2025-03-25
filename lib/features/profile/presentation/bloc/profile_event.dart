@@ -26,3 +26,5 @@ final class ProfileLogoutClickedEvent extends ProfileEvent {
 
   ProfileLogoutClickedEvent({required this.userName, required this.email});
 }
+
+final class ProfileGetEvent extends ProfileEvent {}
