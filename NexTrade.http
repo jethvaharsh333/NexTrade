@@ -1,0 +1,6 @@
+@NexTrade_HostAddress = http://localhost:5079
+
+GET {{NexTrade_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
