@@ -5,13 +5,13 @@ Please see these 3 branches
 2) Frontend: https://github.com/jethvaharsh333/NexTrade/tree/frontend
 3) Microservice: https://github.com/jethvaharsh333/NexTrade/tree/microservice
 
------------------------------------------------------------------------------------------------------------------------------
+----
 
 [VIDEO] Code explaination + Live demo:
 
 [![Watch the video](https://drive.google.com/uc?export=view&id=1WeHf2Y9V8LJSYLmCzmR166GW-kGC_8oQ)](https://drive.google.com/file/d/1oW49mj0_LWxwBWgNYOULSeCWsgR89Zbz/view?usp=sharing)
 
------------------------------------------------------------------------------------------------------------------------------
+----
 ## Backend (`.NET`)
 
 ### Setup
@@ -76,6 +76,3 @@ git pull origin frontend
 ```bash
 flutter pub get
 ```
-
----
-
